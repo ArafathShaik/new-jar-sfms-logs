@@ -57,6 +57,8 @@ public class AddingUserRolesTest
     
     @Test(priority = 3, description = "Handling Allow Pop-ups and Security Pop-ups")
     public void HandlingPopus() throws MalformedURLException, AWTException, InterruptedException {
+	    
+	  System.out.println("User Entered Into Hanling Popups Test");
         Thread.sleep(10000L);
         (this.robot = new Robot()).keyPress(9);
         this.robot.keyRelease(9);
@@ -104,8 +106,10 @@ public class AddingUserRolesTest
         this.robot.keyRelease(10);
         Thread.sleep(12000L);
         this.driver.findElement(By.xpath("//div[@id='redirect_admin']/a")).click();
+	    System.out.println("Clicked on Admin Link");
         Thread.sleep(6000L);
         this.driver.findElement(By.xpath("//div[@class='text-right']/a[@class='clickhere']")).click();
+	    System.out.println("Clicked on Click Here Link");
         Thread.sleep(15000L);
         this.robot.keyPress(9);
         this.robot.keyRelease(9);
