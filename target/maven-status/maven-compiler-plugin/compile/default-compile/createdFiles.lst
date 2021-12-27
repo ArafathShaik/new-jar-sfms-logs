@@ -5,8 +5,6 @@ test\DarazSearchTest.class
 test\ERRequestCreationAndVerificationTestRobot2.class
 org\wtt\docker\listener\PropertiesUtility.class
 test\UserAdministrationTestRobot.class
-org\wtt\docker\listener\ResultSender.class
 test\IFSCDirectoryTestRobot.class
 org\wtt\docker\listener\ExecutionListener.class
-test\ERRequestCreationTestRobot.class
 test\RobotClassDynamicPath.class
