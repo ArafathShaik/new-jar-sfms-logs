@@ -42,6 +42,7 @@ public class IFSCDirectoryTestRobot
     
     @Test(priority = 2, description = "Handling Allow Pop-ups and Security Pop-ups")
     public void HandlingPopus() throws MalformedURLException, AWTException, InterruptedException {
+        System.out.println("User Entered Into Handling Pop-ups Test");
         Thread.sleep(5000L);
         (this.robot = new Robot()).keyPress(9);
         this.robot.keyRelease(9);
@@ -90,8 +91,10 @@ public class IFSCDirectoryTestRobot
         Thread.sleep(10000L);
         Thread.sleep(10000L);
         this.driver.findElement(By.xpath("//div[@id='redirect_admin']/a")).click();
+        System.out.println("Clicked on Admin Link");
         Thread.sleep(6000L);
         this.driver.findElement(By.xpath("//div[@class='text-right']/a[@class='clickhere']")).click();
+        System.out.println("Clicked on Click Here Link");
         Thread.sleep(15000L);
         this.robot.keyPress(9);
         this.robot.keyRelease(9);
