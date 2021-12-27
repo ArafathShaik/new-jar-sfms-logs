@@ -1,0 +1,17 @@
+
+<suite name="FSMSMAVEN" preserve-order="true" parallel="false"  verbose="2">
+    <listeners>
+        <listener class-name="org.wtt.docker.listener.ExecutionListener"/>    
+    </listeners>
+	<test name="FSMSTEST" >
+ 	<classes>
+			<class name="test.AddingUserRolesTest" />
+			<class name="test.ERRequestCreationAndVerificationTestRobot2" />
+			<class name="test.ERRequestCreationTestRobot" />
+			<class name="test.IFSCDirectoryTestRobot" />
+			<class name="test.UserAdministrationTestRobot" />
+			<class name="test.VerifyLoginTestRobot" />
+			
+		</classes> 
+	</test> 
+</suite> 	
